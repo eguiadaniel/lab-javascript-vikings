@@ -57,7 +57,13 @@ class War {
     this.saxonArmy.push(saxon);
   }
   vikingAttack() {
-    this.saxonArmy[0].receiveDamage(10);
+    this.saxonArmy[
+      Math.floor(Math.random() * this.saxonArmy.length)
+    ].receiveDamage(10);
+    console.log(Math.floor(Math.random() * this.saxonArmy.length));
+    console.log(
+      this.saxonArmy[Math.floor(Math.random() * this.saxonArmy.length)]
+    );
   }
 
   saxonAttack() {}
